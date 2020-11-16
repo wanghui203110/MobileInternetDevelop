@@ -44,8 +44,9 @@ public class AccotController {
 
     @RequestMapping("/save")
     public void save(Accot accot, HttpServletRequest request, HttpServletResponse response) throws IOException {
-        accotService.saveAccot(accot);
-        response.sendRedirect(request.getContextPath()+"/accot/findAll");
+        /*accotService.saveAccot(accot);*/
+        /*response.sendRedirect(request.getContextPath()+"/accot/findAll");*/
+        System.out.println(accot);
         return;
     }
 }
